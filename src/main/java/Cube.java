@@ -4,4 +4,18 @@ public class Cube {
   public Cube(Rectangle rectangle) {
     mFace = rectangle;
   }
+
+  public Rectangle getFace() {
+    return mFace;
+  }
+
+  public int volume() {
+    int length = mFace.getLength();
+    return length * length * length;
+  }
+
+  public int surfaceArea() {
+    int surfaceArea = mFace.getLength() * mFace.getWidth();
+    return surfaceArea * 6;
+  }
 }
